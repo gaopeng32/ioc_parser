@@ -5,13 +5,13 @@ from setuptools import setup
 
 setup(
 	name = "ioc_parser",
-	version = "0.9.1",
+	version = "1.0.0",
 	author = "Armin Buescher",
 	author_email = "armin.buescher@googlemail.com",
 	scripts=['bin/iocp'],
 	description = ("Tool to extract indicators of compromise from security reports"),
 	license = "MIT",
-	url = "https://github.com/armbues/ioc_parser",
+	url = "https://github.com/gaopeng32/ioc_parser",
 	packages=['iocp'],
 	include_package_data=True,
 	classifiers=[
