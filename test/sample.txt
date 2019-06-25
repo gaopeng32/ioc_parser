@@ -1,0 +1,1 @@
+Outlook downloads Video.zip. Video.zip self-extracts to Flash_Movie.exe. Flash_Movie.exe drops Monkeys.exe and Player.exe under %temp%. It first launches Monkeys.exe. It then launches Player.exe. Player.exe then collects system information.

@@ -10,8 +10,16 @@ IOC Parser is a tool to extract indicators of compromise from security reports i
 * *-d* Deduplicate matches
 * *-l LIB* Parsing library
 
+**Sample usages**
+
+```bash
+python ioc-parser -i txt -o json -d test/sample.txt
+python ioc-parser -i pdf -l pypdf2 -o json -d test/sample.pdf
+```
+
 ## Installation
-**pip install ioc_parser**
+**pip install -r requirements**
+
 
 ## Requirements
 One of the following PDF parsing libraries:

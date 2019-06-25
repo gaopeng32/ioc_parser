@@ -246,6 +246,7 @@ class Parser(object):
 				self.dedup_store = set()
 
 			data = f.read()
+			data = data.decode('utf-8')
 			self.handler.print_header(fpath)
 			self.parse_page(fpath, data, 1)
 			self.handler.print_footer(fpath)
