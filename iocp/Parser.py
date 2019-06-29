@@ -259,17 +259,17 @@ class Parser(object):
 				self.dedup_store = set()
 				
 			data = f.read()
-			soup = BeautifulSoup(data)
+			soup = BeautifulSoup(data, 'lxml')
 			html = soup.findAll(text=True)
 
 			text = u''
 			for elem in html:
 				if elem.parent.name in ['style', 'script', '[document]', 'head', 'title']:
 					continue
-				elif re.match('<!--.*-->', unicode(elem)):
+				elif re.match('<!--.*-->', str(elem)):
 					continue
 				else:
-					text += unicode(elem)
+					text += str(elem)
 
 			self.handler.print_header(fpath)
 			self.parse_page(fpath, text, 1)
