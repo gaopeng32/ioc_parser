@@ -15,6 +15,7 @@ IOC Parser is a tool to extract indicators of compromise from security reports i
 ```bash
 python ioc-parser -i txt -o json -d test/sample.txt
 python ioc-parser -i pdf -l pypdf2 -o json -d test/sample.pdf
+python ioc-parser -i html -o json -d test/sample.html
 ```
 
 ## Installation
